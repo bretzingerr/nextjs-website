@@ -45,7 +45,6 @@ const HeroSection = () => {
           offset={-100}
           duration={500}
         >
-          <HiArrowDown key={Math.random()} size={35} size={35} className="animate-bounce text-neutral-100" />
         </Link>
       </div>
     </section>
