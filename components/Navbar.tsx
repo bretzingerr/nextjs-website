@@ -33,9 +33,9 @@ export default function Navbar() {
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="home">
+            <Link to="home">test
               {/* <div className="container flex items-center space-x-2"> */}
-                <h2 className="text-2xl">Rebecca Bretzinger</h2>
+                {/* <h2 className="text-2xl">Rebecca Bretzinger</h2> */}
               {/* </div> */}
             </Link>
             <div className="md:hidden">
