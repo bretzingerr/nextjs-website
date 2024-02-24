@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "./SlideUp"
+// import Image from "next/image"
+// import Link from "next/link"
+// import SlideUp from "./SlideUp"
 
 type ProjectType = {
   id: number;
@@ -178,8 +178,8 @@ function ProjectCard({ project, onOpenDetail }: ProjectCardProps) {
   
   {/* Image on the right */}
   <div className="flex-none w-1/3 p-4">
-    <img 
-      src={project.image1} 
+    <imgz
+      src={project.image1}
       alt={project.name} 
       className="object-cover w-full h-full"
     />
@@ -192,7 +192,7 @@ function ProjectCard({ project, onOpenDetail }: ProjectCardProps) {
 </div>
 
   )
-};
+}
 
 
 
@@ -202,8 +202,8 @@ function ProjectDetail({
   onClose,
   onPrev,
   onNext,
-  currentIndex,
-  totalProjects
+  // currentIndex,
+  // totalProjects
 }: ProjectDetailProps) {
   return (
 
@@ -245,7 +245,7 @@ function ProjectDetail({
     {/* Images stack on the left */}
     <div className="w-full md:w-2/3 space-y-4">
       <img src={project.image2} alt={`${project.name} - Main`} className="w-full" />
-      {project.image3 && <img src={project.image3} alt={`${project.name} - Additional`} className="w-full" />}
+      {project.image3 && <img src={project.image3} alt={`${project.name} - Additional`} className="w-fulls" />}
       {project.image4 && <img src={project.image4} alt={`${project.name} - More Views`} className="w-full" />}
     </div>
 
@@ -315,7 +315,7 @@ function ProjectSection() {
     <h1 className="text-center text-stone-200 text-4xl">
       Projects
     </h1>
-    <p className="text-center text-stone-200 my-4 ">A selection of projects I've worked on.</p>
+    <p className="text-center text-stone-200 my-4 ">A selection of projects I&apos;ve worked on.</p>
     {/* <hr className="w-6 h-1 mx-auto my-4 bg-primary border-0 rounded bg-sky-600"></hr> */}
 
     {!showDetail ? (

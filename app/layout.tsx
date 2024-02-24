@@ -5,7 +5,7 @@ import React from "react"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import { ThemeProvider } from "next-themes"
-import { Outfit, Open_Sans, Roboto, Roboto_Condensed,Merriweather, Nunito_Sans,Noto_Sans, Kenia } from "@next/font/google"
+// import { Outfit, Open_Sans, Roboto, Roboto_Condensed,Merriweather, Nunito_Sans,Noto_Sans, Kenia } from "@next/font/google"
 
 // const outfit = Outfit({
 //   subsets: ['latin'],

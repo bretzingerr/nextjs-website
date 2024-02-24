@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "next/image"
+//import Image from "next/image"
 
 const skills = [
   { skill: "HTML" },
@@ -44,10 +44,10 @@ const AboutSection = () => {
               based near Salt Lake City, Utah.
             </p>
             <br /> */}
-            <p>For nearly two decades, I've specialized in the field of "digital transformation," dedicating over 15 of those years to consulting on projects for notable companies. Among many roles in my professional journey, my experience includes developing custom themes using HubSpot CMS and creating high-traffic marketing websites for companies like Fidelity and Eli Lilly Pharmaceuticals.
+            <p>For nearly two decades, I&apos;ve specialized in the field of "digital transformation," dedicating over 15 of those years to consulting on projects for notable companies. Among many roles in my professional journey, my experience includes developing custom themes using HubSpot CMS and creating high-traffic marketing websites for companies like Fidelity and Eli Lilly Pharmaceuticals.
             </p>
             <br />
-            <p>All these milestones reflect the diverse consulting assignments I've tackled at New Era Technology, where my tenure has spanned over 17 years. By embracing and applying a growth mindset, I've been entrusted with excelling in varied roles and technologies. My commitment and performance have frequently been validated by positive feedback from clients and numerous in-house recognitions from colleagues and management.
+            <p>All these milestones reflect the diverse consulting assignments I&apos;ve tackled at New Era Technology, where my tenure has spanned over 17 years. By embracing and applying a growth mindset, I&apos;ve been entrusted with excelling in varied roles and technologies. My commitment and performance have frequently been validated by positive feedback from clients and numerous in-house recognitions from colleagues and management.
             </p>
             <br />
             <p>While I still hold a special place in my heart for Indiana, Utah has been my home for the past seven years. Living just a stone's throw from the mountains with my husband and son, I love to ski, hike, and set out on road trips. When not in the great outdoors, I also enjoy attending concerts, listening to podcasts, and volunteering.
@@ -78,7 +78,7 @@ const AboutSection = () => {
                 )
               })}
             </div>
-            <Image
+            <img
               src="/mountain1.png"
               alt=""
               width={420}

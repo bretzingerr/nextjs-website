@@ -2,7 +2,7 @@
 import React from "react"
 import { useState } from "react"
 import { Link } from "react-scroll/modules"
-import { usePathname } from "next/navigation"
+// import { usePathname } from "next/navigation"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
 
 interface NavItem {
@@ -26,7 +26,7 @@ const NAV_ITEMS: Array<NavItem> = [
 ]
 
 export default function Navbar() {
-  const pathname = usePathname()
+  // const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
     <header className="w-full mx-auto  px-4 md:px-8 lg:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">

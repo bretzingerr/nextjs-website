@@ -2,7 +2,7 @@
 import React from "react"
 import Image from "next/image"
 import { Link } from "react-scroll/modules"
-import { HiArrowDown } from "react-icons/hi"
+// import { HiArrowDown } from "react-icons/hi"
 
 
 
@@ -21,7 +21,7 @@ const HeroSection = () => {
             <span className="font-semibold text-yellow-500">
             Frontend Developer{" "}
             </span>
-            specializing in crafting web solutions, recently focusing on HubSpot CMS. I'm based in the beautiful state of Utah. Dive in to know more about me and my skills.
+            specializing in crafting web solutions, recently focusing on HubSpot CMS. I&apos;m based in the beautiful state of Utah. Dive in to know more about me and my skills.
           </p>
           <Link
             to="projects"

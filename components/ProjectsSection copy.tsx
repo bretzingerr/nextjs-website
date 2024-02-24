@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "./SlideUp"
+// import Image from "next/image"
+// import Link from "next/link"
+// import SlideUp from "./SlideUp"
 
 type ProjectType = {
   id: number;
@@ -147,7 +147,7 @@ interface ProjectDetailProps {
 
 function ProjectDetail({
   project,
-  onClose,
+  // onClose,
   onPrevious,
   onNext
 }: ProjectDetailProps) {

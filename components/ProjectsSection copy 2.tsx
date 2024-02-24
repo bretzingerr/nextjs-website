@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "./SlideUp"
+// import Image from "next/image"
+// import Link from "next/link"
+// import SlideUp from "./SlideUp"
 
 type ProjectType = {
   id: number;
@@ -163,7 +163,7 @@ function ProjectCard({ project, onOpenDetail }: ProjectCardProps) {
   
 
   )
-};
+}
 
 
 
@@ -289,7 +289,7 @@ function ProjectSection() {
           Projects
          
         </h1>
-        <p className="text-center">A selection of projects I've worked on.</p>
+        <p className="text-center">A selection of projects I&apos;ve worked on.</p>
         <hr className="w-6 h-1 mx-auto my-4 bg-primary border-0 rounded rounded bg-sky-600"></hr>
 
         {!showDetail ? (
