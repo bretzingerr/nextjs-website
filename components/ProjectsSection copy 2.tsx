@@ -144,7 +144,7 @@ function ProjectCard({ project, onOpenDetail }: ProjectCardProps) {
       <img 
         src={project.image1} 
         alt={project.name} 
-        className="object-cover h-full w-full rounded shadow-sm" {/* Added width 100% to ensure image fills its container */}
+        className="object-cover h-full w-full rounded shadow-sm"
       />
     </div>
     
