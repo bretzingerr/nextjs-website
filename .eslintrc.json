@@ -9,13 +9,7 @@
     "react",
     "@typescript-eslint"
   ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
+
   "rules": {
     // Add your custom rules here
     "quotes": "off",

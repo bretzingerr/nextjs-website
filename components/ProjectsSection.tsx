@@ -178,7 +178,7 @@ function ProjectCard({ project, onOpenDetail }: ProjectCardProps) {
   
   {/* Image on the right */}
   <div className="flex-none w-1/3 p-4">
-    <imgz
+    <img
       src={project.image1}
       alt={project.name} 
       className="object-cover w-full h-full"
