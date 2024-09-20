@@ -2,50 +2,54 @@
 import React from "react"
 import Image from "next/image"
 import { Link } from "react-scroll/modules"
-// import { HiArrowDown } from "react-icons/hi"
-
-
 
 
 const HeroSection = () => {
   return (
     <section id="home">
-      <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 sm:my-32 sm:mx-12 md:my-48 md:flex-row md:space-x-4 md:text-left">
-        <div className="md:mt-2 md:w-1/2 flex justify-center">
-          <Image className="rounded-full shadow-2xl" src="/rebecca-bretzinger-hubspot-cms-developer2.jpg" alt="Rebecca Bretzinger" width={340} height={340} />
+      {/* Wrapper for the hero section */}
+      <div className="col-wrapper">
+        
+        {/* Column for the image */}
+        <div className="image-col">
+        <div className="relative w-64 h-64">
+
+          <Image className="rounded-full" src="/Rebecca7-square.png" alt="Rebecca Bretzinger" width={370}
+    height={370}  />
+          </div>
         </div>
-        <div className="md:mt-2 md:w-3/5">
-          <h1 className="text-2xl font-volkhov mt-6 md:mt-0 md:text-4xl">Hello, I&#39;m Rebecca!</h1>
-          <p className="mt-4 mb-10 font-normal text-2xl">
-            I&#39;m an experienced{" "}
-            <span className="font-semibold text-yellow-500">
-            Frontend Developer{" "}
-            </span>
-            specializing in crafting web solutions, recently focusing on HubSpot CMS. I&apos;m based in the beautiful state of Utah. Dive in to know more about me and my skills.
-          </p>
-          <Link
-            to="projects"
-            className="cursor-pointer text-neutral-100 font-semibold px-6 py-3 bg-sky-700 rounded shadow hover:bg-sky-800"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-84}
-            duration={500}
-          >
-            Projects
-          </Link>
+
+        {/* Column for the text and button */}
+        <div className="text-col">
+          <h1>Hello, I&#39;m Rebecca</h1>
+          <p>
+          With 19 years of experience as a web developer and marketing technology specialist, I’ve worked across a wide variety of roles for notable companies. This year, I earned certifications as a Salesforce Marketing Cloud Email Specialist and Developer. Scroll down to learn more about me and explore key web development and SFMC projects I’ve worked on.
+          
+          </p>          <div className="links-wrapper">
+  <Link
+    to="about"
+    className="link-with-arrow"
+    smooth={true}
+    offset={-84}  // Adjust the offset to match your sticky header height
+    duration={500}
+  >
+    <h3>More About Me</h3>
+    <i className="fas fa-arrow-right"></i>
+  </Link>
+
+  <Link
+    to="projects"
+    className="link-with-arrow"
+    smooth={true}
+    offset={-84}  // Same offset for consistent behavior
+    duration={500}
+  >
+    <h3>View My Projects</h3>
+    <i className="fas fa-arrow-right"></i>
+  </Link>
+</div>
+
         </div>
-      </div>
-      <div className="flex flex-row items-center text-center justify-center ">
-        <Link
-          to="about"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-        >
-        </Link>
       </div>
     </section>
   )

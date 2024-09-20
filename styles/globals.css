@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    background-color: #f2f2f2;
+    background-color: #f3f2f0;
     font-family: 'Noto Sans', sans-serif;
     color: #4a4a4a; /* Dark gray for body text */
+}
+
+a {
+  cursor: pointer;
 }
 
 nav {
@@ -27,15 +36,26 @@ nav a:hover {
     text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Nunito Sans', sans-serif;
-    color: #003366; /* Navy blue for headers */
+h1 {
+    font-family: 'Gowun Batang', sans-serif;
+    color: #004D9A;
 }
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Gowun Batang', sans-serif;
+  color: #004080;
+}
+
+p {
+  font-size: 1.1rem !important;
+}
+
 
 .section {
     position: relative;
     width: 100vw;
     border-bottom: 1px solid #ccc; /* Slightly darker gray for section dividers */
+    min-height: 100vh;
 }
 
 .section:last-child {
@@ -51,4 +71,147 @@ footer {
 
 footer p {
     color: #4a4a4a; /* Ensure footer text is dark gray */
+}
+/* Custom CSS to replace Tailwind */
+
+
+
+/* Flexbox to create two columns */
+.col-wrapper {
+  display: flex;
+  flex-direction: row; /* Ensure columns are side-by-side on desktop */
+  align-items: center;
+  justify-content: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 140px 20px;
+  gap:40px;
+
+    min-height: 100vh; /* Ensures hero section takes up the full viewport height */
+
+}
+
+.image-col {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: flex-end; /* Aligns the image to the right */
+  margin-right: 20px;
+}
+
+.text-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.highlight-text {
+  color: #FFD700; /* Yellow highlight */
+  font-weight: bold;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  background-color: #1e3a8a; /* Dark blue */
+  color: #ffffff;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block; /* Prevents button from being full width */
+  width: auto;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #3b5998; /* Slightly lighter on hover */
+}
+
+/* Link wrapper to place the links side by side */
+.links-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px; /* Space between the two links */
+  margin-top: 20px;
+}
+/* Link container, no underline by default */
+.link-with-arrow {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none; /* Remove underline from entire link */
+  color: #555555;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+/* Apply underline only to h3 text inside the link */
+.link-with-arrow h3 {
+  text-decoration: underline; /* Underline only the heading text */
+  font-weight: normal; /* Default weight */
+  margin: 0; /* Remove default margin for inline display */
+  font-size: 1.25rem; 
+  color: inherit; /* Inherit color from link */
+}
+
+
+/* Arrow styling */
+.link-with-arrow .arrow {
+  margin-left: 5px;
+  display: inline-block;
+  transition: transform 0.3s ease; /* Arrow movement animation */
+  font-size: 1.5rem;
+  color: #555555;
+}
+
+/* Hover effect */
+
+
+.link-with-arrow:hover h3 {
+  font-weight: normal !important;
+}
+
+.link-with-arrow:hover .arrow {
+  transform: translateX(2px); /* Move arrow on hover */
+  color: #003366; /* Change arrow color on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .col-wrapper {
+      flex-direction: column; /* Stacks image and text on mobile */
+      align-items: center;
+      padding-top: 140px;
+  }
+
+  .image-col {
+      justify-content: center;
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .text-col {
+      text-align: center;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  p {
+      font-size: 1.1rem;
+  }
+
+  .cta-button {
+      width: 100%; /* Full-width button on mobile */
+  }
 }

@@ -312,7 +312,7 @@ function ProjectSection() {
   return (
     <section id="projects" >
   <div className="container mx-auto px-4 sm:my-16 md:my-48">
-    <h1 className="text-center text-stone-200 text-4xl">
+    <h1 className="text-left text-4xl">
       Projects
     </h1>
     <p className="text-center text-stone-200 my-4 ">A selection of projects I&apos;ve worked on.</p>
