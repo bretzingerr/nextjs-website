@@ -3,26 +3,26 @@ import Image from "next/image"
 
 //import Image from "next/image"
 
-const skills = [
-  { skill: "HTML" },
-  { skill: "CSS" },
-  { skill: "JavaScript" },
-  { skill: "HubSpot CMS" },
-  { skill: "HubL" },
-  { skill: "React" },
-  { skill: "Angular" },
-  { skill: "TypeScript" },
-  { skill: "Next.js" },
-  { skill: "Tailwind CSS" },
-  { skill: "Storybook" },
-  { skill: "Material UI" },
-  { skill: "Git" },
-  { skill: "GitHub" },
-  { skill: "HubSpot CRM" },
-  { skill: "Email Marketing" },
-  { skill: "Figma" },
-  { skill: "Adobe XD" }
-]
+// const skills = [
+//   { skill: "HTML" },
+//   { skill: "CSS" },
+//   { skill: "JavaScript" },
+//   { skill: "HubSpot CMS" },
+//   { skill: "HubL" },
+//   { skill: "React" },
+//   { skill: "Angular" },
+//   { skill: "TypeScript" },
+//   { skill: "Next.js" },
+//   { skill: "Tailwind CSS" },
+//   { skill: "Storybook" },
+//   { skill: "Material UI" },
+//   { skill: "Git" },
+//   { skill: "GitHub" },
+//   { skill: "HubSpot CRM" },
+//   { skill: "Email Marketing" },
+//   { skill: "Figma" },
+//   { skill: "Adobe XD" }
+// ]
 
 const AboutSection = () => {
   return (
