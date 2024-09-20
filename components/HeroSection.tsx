@@ -15,8 +15,8 @@ const HeroSection = () => {
           <Image className="rounded-full shadow-2xl" src="/rebecca-bretzinger-hubspot-cms-developer2.jpg" alt="Rebecca Bretzinger" width={340} height={340} />
         </div>
         <div className="md:mt-2 md:w-3/5">
-          <h1 className="text-2xl font-volkhov mt-6 md:mt-0 md:text-4xl text-stone-200">Hi, I&#39;m Rebecca Brezinger</h1>
-          <p className="mt-4 mb-10 font-normal text-stone-200 text-2xl">
+          <h1 className="text-2xl font-volkhov mt-6 md:mt-0 md:text-4xl">Hello, I&#39;m Rebecca!</h1>
+          <p className="mt-4 mb-10 font-normal text-2xl">
             I&#39;m an experienced{" "}
             <span className="font-semibold text-yellow-500">
             Frontend Developer{" "}
