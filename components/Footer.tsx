@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="w-full px-4 sm:px-6">
       {/* <hr className="w-full h-0.5 bg-neutral-200 border-0"></hr> */}
       <div className="flex flex-col items-center text-center text-neutral-900 py-4 md:flex-row md:justify-between">
-        <div className="text-neutral-500 dark:text-neutral-100">
+        <div className="text-neutral-500 ">
           © 2023 Rebecca Bretzinger
         </div>
         <div className="flex items-center justify-center space-x-2 mt-4 md:mt-0">
