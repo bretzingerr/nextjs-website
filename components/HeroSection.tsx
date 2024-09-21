@@ -21,7 +21,7 @@ const HeroSection = () => {
 
         {/* Column for the text and button */}
         <div className="text-col">
-          <h1>Hello, I&#39;m Rebecca</h1>
+          <h1>Hello, I&#39;m Rebecca!</h1>
           <p>
           With 19 years of experience as a web developer and marketing technology specialist, I’ve worked across a wide variety of roles for notable companies. This year, I earned certifications as a Salesforce Marketing Cloud Email Specialist and Developer. Scroll down to learn more about me and explore key web development and SFMC projects I’ve worked on.
           
