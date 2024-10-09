@@ -54,30 +54,14 @@ p {
 .section {
     position: relative;
     width: 100vw;
-    border-bottom: 1px solid #ccc; /* Slightly darker gray for section dividers */
     min-height: 100vh;
 }
 
-.section:last-child {
-    border-bottom: none; /* No border for the last section */
+#home {
+  background-color: #2e4770;
 }
 
-footer {
-    background-color: #d3d3d3; /* Mid-gray for footer */
-    color: #4a4a4a; /* Dark gray for footer text */
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    color: #4a4a4a; /* Ensure footer text is dark gray */
-}
-/* Custom CSS to replace Tailwind */
-
-
-
-/* Flexbox to create two columns */
-.col-wrapper {
+.hero-col-wrapper {
   display: flex;
   flex-direction: row; /* Ensure columns are side-by-side on desktop */
   align-items: center;
@@ -91,19 +75,44 @@ footer p {
 
 }
 
-.image-col {
-  flex: 0 0 30%;
-  display: flex;
-  justify-content: flex-end; /* Aligns the image to the right */
-  margin-right: 20px;
-}
-
 .text-col {
-  flex: 1;
+  flex: 0 0 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+.image-col {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: flex-start; /* Aligns the image to the left of the column but shouldn't matter since the image will fill the column width wise, right? */
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+#about {
+  background-color: #f3f2f0;
+}
+
+
+
+
+
 
 h1 {
 
@@ -118,10 +127,6 @@ p {
   margin-bottom: 2rem;
 }
 
-.highlight-text {
-  color: #FFD700; /* Yellow highlight */
-  font-weight: bold;
-}
 
 .cta-button {
   padding: 12px 24px;
@@ -183,6 +188,24 @@ p {
 .link-with-arrow:hover .arrow {
   transform: translateX(2px); /* Move arrow on hover */
   color: #003366; /* Change arrow color on hover */
+}
+
+
+
+
+.section:last-child {
+  border-bottom: none; /* No border for the last section */
+}
+
+footer {
+  background-color: #d3d3d3; /* Mid-gray for footer */
+  color: #4a4a4a; /* Dark gray for footer text */
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #4a4a4a; /* Ensure footer text is dark gray */
 }
 
 /* Responsive adjustments for smaller screens */
